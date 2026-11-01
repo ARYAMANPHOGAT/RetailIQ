@@ -1,0 +1,11 @@
+{
+  "model_variant": "stage4",
+  "model_version": "M5 Stage 4 LightGBM",
+  "model_path": "C:\\Users\\Asus\\Downloads\\RetailIQ\\models\\m5\\stage4\\m5_lightgbm_stage4.txt",
+  "metadata_path": "C:\\Users\\Asus\\Downloads\\RetailIQ\\models\\m5\\stage4\\m5_training_metadata.json",
+  "validation_metrics_path": "C:\\Users\\Asus\\Downloads\\RetailIQ\\outputs\\m5\\stage4\\results\\stage4_metrics.json",
+  "test_metrics_path": "C:\\Users\\Asus\\Downloads\\RetailIQ\\outputs\\m5\\stage4\\results\\stage4_test_metrics.json",
+  "selected_by": "Validation low-demand MAE/WAPE non-regression gate, then overall validation MAE; final test excluded from selection.",
+  "dataset": "Walmart M5 Forecasting; isolated from the synthetic RetailIQ upload pipeline.",
+  "stage5_promoted": false
+}

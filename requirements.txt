@@ -1,0 +1,13 @@
+# RetailIQ - direct dependencies (Python 3.12 or 3.13, 64-bit)
+# Versions are pinned to the exact versions used to train the bundled models in models/.
+# If you change versions, run `python train.py` again so the saved models match.
+numpy==2.5.3
+pandas==3.0.5
+scikit-learn==1.9.1
+joblib==1.6.0
+streamlit==1.66.1
+plotly==7.1.0
+openpyxl==3.1.5
+fpdf2==2.9.0
+pytest==9.1.1
+lightgbm==4.7.0

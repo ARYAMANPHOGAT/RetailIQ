@@ -1,0 +1,16 @@
+﻿.venv/
+__pycache__/
+.pytest_cache/
+.streamlit/secrets.toml
+.env
+*.db
+*.sqlite
+*.sqlite3
+data/m5/
+outputs/m5/
+logs/
+
+# Temporary files
+*.pyc
+.pytest_cache/
+.streamlit/secrets.toml

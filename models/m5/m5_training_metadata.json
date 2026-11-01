@@ -1,0 +1,128 @@
+{
+  "created_at": "2026-11-01T14:48:37",
+  "lightgbm_version": "4.7.0",
+  "selected_model": "LightGBM",
+  "selection_rule": "Lowest validation MAE; final test was not read until selection was fixed.",
+  "training_period_target_days": [
+    29,
+    1885
+  ],
+  "validation_period_target_days": [
+    1886,
+    1913
+  ],
+  "test_period_target_days": [
+    1914,
+    1941
+  ],
+  "total_training_rows_available": 56619930,
+  "training_rows_used": 2000000,
+  "training_series_used": 30490,
+  "validation_rows": 853720,
+  "validation_series": 30490,
+  "test_rows": 853720,
+  "test_series": 30490,
+  "sampling_policy": "Uniform global row sample without replacement, sorted by source row position; all validation/test rows retained.",
+  "random_seed": 42,
+  "feature_names": [
+    "item_idx",
+    "store_idx",
+    "state_idx",
+    "dept_idx",
+    "cat_idx",
+    "target_day",
+    "lag_1",
+    "lag_7",
+    "lag_14",
+    "lag_28",
+    "roll_mean_7",
+    "roll_mean_28",
+    "roll_std_7",
+    "roll_std_28",
+    "target_dow",
+    "target_wday",
+    "target_month",
+    "target_year",
+    "event_name_1",
+    "event_type_1",
+    "event_name_2",
+    "event_type_2",
+    "snap_CA",
+    "snap_TX",
+    "snap_WI",
+    "snap_state",
+    "price_at_cutoff",
+    "price_prev_week",
+    "price_change_pct",
+    "price_missing"
+  ],
+  "categorical_features": [
+    "item_idx",
+    "store_idx",
+    "state_idx",
+    "dept_idx",
+    "cat_idx",
+    "target_dow",
+    "target_wday",
+    "target_month",
+    "event_name_1",
+    "event_type_1",
+    "event_name_2",
+    "event_type_2"
+  ],
+  "missing_values": "LightGBM native NaN handling enabled; price_missing retained; no imputation.",
+  "lightgbm_parameters": {
+    "objective": "regression_l1",
+    "metric": "l1",
+    "learning_rate": 0.05,
+    "num_leaves": 31,
+    "max_depth": -1,
+    "min_data_in_leaf": 100,
+    "feature_fraction": 0.8,
+    "bagging_fraction": 0.8,
+    "bagging_freq": 1,
+    "max_bin": 63,
+    "histogram_pool_size": 512,
+    "cat_smooth": 10.0,
+    "max_cat_threshold": 32,
+    "use_missing": true,
+    "zero_as_missing": false,
+    "verbosity": -1,
+    "num_threads": 8,
+    "seed": 42,
+    "data_random_seed": 42,
+    "feature_fraction_seed": 42,
+    "bagging_seed": 42,
+    "deterministic": true,
+    "force_col_wise": true
+  },
+  "max_boost_rounds": 1000,
+  "early_stopping_rounds": 80,
+  "best_iteration": 932,
+  "model_training_seconds": 189.76,
+  "peak_process_rss_mb": 610.19921875,
+  "validation_metrics": {
+    "Seasonal Naive (lag_7)": {
+      "MAE": 1.205351871808087,
+      "RMSE": 2.660111796733238,
+      "WAPE_percent": 86.93903310674149
+    },
+    "LightGBM": {
+      "MAE": 0.8853345318017249,
+      "RMSE": 2.001151311353728,
+      "WAPE_percent": 63.856978174674154
+    }
+  },
+  "test_metrics": {
+    "Seasonal Naive (lag_7)": {
+      "MAE": 1.2447230942229301,
+      "RMSE": 2.6815128081654116,
+      "WAPE_percent": 86.27017837832572
+    },
+    "LightGBM": {
+      "MAE": 0.918982516031136,
+      "RMSE": 2.0555606282884202,
+      "WAPE_percent": 63.693512197637006
+    }
+  }
+}
